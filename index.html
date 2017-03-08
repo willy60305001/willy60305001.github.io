@@ -48,9 +48,9 @@
       </nav>
       <nav id="sub-nav">
         
-          <a id="nav-rss-link" class="nav-icon" href="/atom.xml" title="RSS Feed"></a>
+          <a id="nav-rss-link" class="nav-icon" href="/atom.xml" title="Flux RSS"></a>
         
-        <a id="nav-search-btn" class="nav-icon" title="Search"></a>
+        <a id="nav-search-btn" class="nav-icon" title="Rechercher"></a>
       </nav>
       <div id="search-form-wrap">
         <form action="//google.com/search" method="get" accept-charset="UTF-8" class="search-form"><input type="search" name="q" results="0" class="search-form-input" placeholder="Search"><button type="submit" class="search-form-submit">&#xF002;</button><input type="hidden" name="sitesearch" value="https://willy60305001.github.io"></form>
@@ -75,7 +75,7 @@
         
   
     <h1 itemprop="name">
-      <a class="article-title" href="/2017/03/03/hello-world/">Hello World</a>
+      <a class="article-title" href="/2017/03/03/hello-world/">Hello Hexo</a>
     </h1>
   
 
@@ -83,20 +83,48 @@
     
     <div class="article-entry" itemprop="articleBody">
       
-        <p>Welcome to <a href="https://hexo.io/" target="_blank" rel="external">Hexo</a>! This is your very first post. Check <a href="https://hexo.io/docs/" target="_blank" rel="external">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a href="https://hexo.io/docs/troubleshooting.html" target="_blank" rel="external">troubleshooting</a> or you can ask me on <a href="https://github.com/hexojs/hexo/issues" target="_blank" rel="external">GitHub</a>.</p>
-<h2 id="Quick-Start"><a href="#Quick-Start" class="headerlink" title="Quick Start"></a>Quick Start</h2><h3 id="Create-a-new-post"><a href="#Create-a-new-post" class="headerlink" title="Create a new post"></a>Create a new post</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">$ hexo new <span class="string">"My New Post"</span></div></pre></td></tr></table></figure>
-<p>More info: <a href="https://hexo.io/docs/writing.html" target="_blank" rel="external">Writing</a></p>
-<h3 id="Run-server"><a href="#Run-server" class="headerlink" title="Run server"></a>Run server</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">$ hexo server</div></pre></td></tr></table></figure>
-<p>More info: <a href="https://hexo.io/docs/server.html" target="_blank" rel="external">Server</a></p>
-<h3 id="Generate-static-files"><a href="#Generate-static-files" class="headerlink" title="Generate static files"></a>Generate static files</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">$ hexo generate</div></pre></td></tr></table></figure>
-<p>More info: <a href="https://hexo.io/docs/generating.html" target="_blank" rel="external">Generating</a></p>
-<h3 id="Deploy-to-remote-sites"><a href="#Deploy-to-remote-sites" class="headerlink" title="Deploy to remote sites"></a>Deploy to remote sites</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">$ hexo deploy</div></pre></td></tr></table></figure>
-<p>More info: <a href="https://hexo.io/docs/deployment.html" target="_blank" rel="external">Deployment</a></p>
+        <h2 id="前言"><a href="#前言" class="headerlink" title="前言"></a><strong>前言</strong></h2><p>從以前開始總是很想要擁有屬於自己的一個技術Blog，無奈每次總是半途而廢。 最近無意間發現了Hexo這個玩意，又可以利用github發佈，剛好可以鍛鍊自己對git方面的一些知識，希望自己可以持續下去。</p>
+<p>畢業出來工作之後，發現自己跟目前時下流行的網頁技術，不館是前端還是後端，都還有好一段差距QAQ。更由於公司目前主要還是寫Asp.net Webform，為了不讓自己變得沉淪，最近開始會在閒暇時刻來自我學習，加油!</p>
+<p>由於還不熟Hexo，因此前面幾篇文章應該都會寫學習Hexo方面相關的事情吧!</p>
+<p>那..直接開始第一篇吧XD</p>
+<p>通常第一篇都是寫怎麼安裝Hexo及環境設定之類的，不過應該會移到後面吧，這篇文章先寫一些跟Markdown有關的東西，畢竟是Hexo的文章好像都是用這個寫的(掩面)。</p>
+<h2 id="進入正題"><a href="#進入正題" class="headerlink" title="進入正題"></a><strong>進入正題</strong></h2><p>Markdown 主要常用在email或是部落格的文章上，以前在寫文章的時為了排版會需要用到大量的html標籤，而在Markdown中，我們只需要使用簡短的標記就可以達到了。</p>
+<p>Markdown目前有許多專有的編輯器可以用，我目前是使用MARKDOWNPAD這個軟體來編輯Markdown格式的檔案，</p>
+<ul>
+<li>官方網站: <strong><a href="http://pad.haroopress.com/" target="_blank" rel="external">http://pad.haroopress.com/</a></strong></li>
+</ul>
+<p>下載之後安裝就可以用了~</p>
+<p>在這裡先列出幾個可能之後會用到的語法好了，之後的就邊寫邊查唄~</p>
+<h4 id="分段標題"><a href="#分段標題" class="headerlink" title="分段標題"></a><strong>分段標題</strong></h4><p>1-6個#字號對應html中的(&lt;H1&gt;到&lt;H6&gt;)</p>
+<p>語法<br><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line"><span class="comment">### 標題 這是H3</span></div></pre></td></tr></table></figure></p>
+<p>效果就像上面的標題。</p>
+<h4 id="區塊引言"><a href="#區塊引言" class="headerlink" title="區塊引言"></a><strong>區塊引言</strong></h4><p>只需要在文字的最前面加上&gt;</p>
+<p>語法<br><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">&gt; 今天天氣好好~</div></pre></td></tr></table></figure></p>
+<p>效果如下</p>
+<blockquote>
+<p>今天天氣好好~</p>
+</blockquote>
+<h4 id="清單"><a href="#清單" class="headerlink" title="清單"></a><strong>清單</strong></h4><p>Markdown支援有序清單和無序清單。</p>
+<p>無序清單為文字前面加上星號、加號或是減號作為清單標記。<br>語法<br><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div></pre></td><td class="code"><pre><div class="line">* 今天天氣~</div><div class="line">* 今天天氣好~</div><div class="line">* 今天天氣好好~</div></pre></td></tr></table></figure></p>
+<p>效果如下</p>
+<ul>
+<li>今天天氣~</li>
+<li>今天天氣好~</li>
+<li>今天天氣好好~</li>
+</ul>
+<p>有序清單則使用數字加上一個句點。<br>語法<br><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div></pre></td><td class="code"><pre><div class="line">1. 今天天氣~</div><div class="line">2. 今天天氣好~</div><div class="line">3. 今天天氣好好~</div></pre></td></tr></table></figure></p>
+<p>效果如下</p>
+<ol>
+<li>今天天氣~</li>
+<li>今天天氣好~</li>
+<li>今天天氣好好~</li>
+</ol>
+<p>時間有點晚了，今天就先寫到這吧，明天繼續紀錄一些Markdown常用的語法還有Hexo的一些擴充語法。</p>
 
       
     </div>
     <footer class="article-footer">
-      <a data-url="https://willy60305001.github.io/2017/03/03/hello-world/" data-id="ciztvb2z70000tcuuk3rc057r" class="article-share-link">Share</a>
+      <a data-url="https://willy60305001.github.io/2017/03/03/hello-world/" data-id="cj016k8a800002guug9knlmhd" class="article-share-link">Partager</a>
       
       
     </footer>
@@ -131,12 +159,12 @@
   
     
   <div class="widget-wrap">
-    <h3 class="widget-title">Recent Posts</h3>
+    <h3 class="widget-title">Articles récents</h3>
     <div class="widget">
       <ul>
         
           <li>
-            <a href="/2017/03/03/hello-world/">Hello World</a>
+            <a href="/2017/03/03/hello-world/">Hello Hexo</a>
           </li>
         
       </ul>
@@ -152,7 +180,7 @@
   <div class="outer">
     <div id="footer-info" class="inner">
       &copy; 2017 John Doe<br>
-      Powered by <a href="http://hexo.io/" target="_blank">Hexo</a>
+      Propulsé by <a href="http://hexo.io/" target="_blank">Hexo</a>
     </div>
   </div>
 </footer>
